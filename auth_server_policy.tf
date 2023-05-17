@@ -16,4 +16,5 @@ resource "okta_auth_server_policy_rule" "gcat-quote-rule" {
   priority             = 1
   group_whitelist      = ["EVERYONE"]
   grant_type_whitelist = ["authorization_code", "implicit"]
+  scope_whitelist      = ["*"]
 }
