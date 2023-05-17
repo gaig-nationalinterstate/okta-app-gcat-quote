@@ -1,6 +1,6 @@
 # Authorization Server
 resource "okta_auth_server" "gcat-quote-auth-server" {
-  audiences                 = ["https://${var.env}gcatequote.natl.com"]
+  audiences                 = ["https://${var.env}gcatquote.natl.com"]
   credentials_rotation_mode = "AUTO"
   description               = "GCAT Quote Auth Server"
   issuer_mode               = "CUSTOM_URL"
