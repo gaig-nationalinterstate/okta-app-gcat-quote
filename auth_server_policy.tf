@@ -14,5 +14,6 @@ resource "okta_auth_server_policy_rule" "gcat-quote-rule" {
   status               = "ACTIVE"
   name                 = "GCAT Quote Default Policy Rule"
   priority             = 1
+  group_whitelist      = ["EVERYONE"]
   grant_type_whitelist = ["authorization_code", "implicit"]
 }
